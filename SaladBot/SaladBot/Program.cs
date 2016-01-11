@@ -17,6 +17,8 @@ namespace SaladBot
             rightArm1.ProvideBowl();
             rightArm1.ProvideFork();
             salad.ValidateSaladCount();
+
+            salad.PrintSalad();
             Console.ReadLine();
         }
     }

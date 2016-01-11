@@ -8,8 +8,8 @@ namespace SaladBot
 {
     public class Salad :  ISaladValidator
     {
-        private int SaladsCreated = 0;
         public int MinimumToppingsNeeded = 6;
+        public int servingSize = 1;
         public List<Topping> saladTopping = new List<Topping>()
         {
             new Topping("Romaine Lettece"),
@@ -22,9 +22,10 @@ namespace SaladBot
 
         public void PrintSalad()
         {
-            foreach (var topping in saladTopping)
+            Console.WriteLine(Environment.NewLine);
+            foreach (Topping topping in saladTopping)
             {
-                Console.WriteLine("{0}", topping.Name);
+                Console.WriteLine("{0} serving of {1}", servingSize, topping.Name);
             }
         }
 
