@@ -43,8 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arm.cs" />
+    <Compile Include="ISaladValidator.cs" />
+    <Compile Include="LeftArm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RightArm.cs" />
+    <Compile Include="Salad.cs" />
+    <Compile Include="Topping.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

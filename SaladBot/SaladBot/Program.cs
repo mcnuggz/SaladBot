@@ -8,8 +8,16 @@ namespace SaladBot
 {
     public class Program
     {
+
         static void Main(string[] args)
         {
+            Salad salad = new Salad();
+            RightArm rightArm1 = new RightArm();
+
+            rightArm1.ProvideBowl();
+            rightArm1.ProvideFork();
+            salad.ValidateSaladCount();
+            Console.ReadLine();
         }
     }
 }
